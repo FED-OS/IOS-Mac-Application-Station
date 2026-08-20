@@ -1,0 +1,18 @@
+{
+  "name": "web-to-ios-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wraps a web app into a native iOS shell using Capacitor, built via GitHub Actions.",
+  "scripts": {
+    "build": "echo 'Build your web app here, e.g. vite build / next build / npm run build in your web project' && exit 0",
+    "sync": "npx cap sync ios",
+    "ios:open": "npx cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/ios": "^6.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2"
+  }
+}
