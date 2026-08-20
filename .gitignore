@@ -1,0 +1,31 @@
+# Node
+node_modules/
+dist/
+build/
+npm-debug.log*
+
+# iOS / Xcode
+ios/App/Pods/
+ios/App/App.xcworkspace/xcuserdata/
+ios/App/*.xcarchive
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Capacitor
+ios/App/App/public/
+
+# Secrets (never commit these)
+*.p12
+*.mobileprovision
+*.p8
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# macOS
+.DS_Store
