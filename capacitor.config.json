@@ -1,0 +1,12 @@
+{
+  "appId": "com.yourcompany.yourapp",
+  "appName": "YourApp",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "ios": {
+    "contentInset": "automatic"
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}
