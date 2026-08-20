@@ -1,0 +1,21 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Build the app and export a signed .ipa"
+  lane :build do
+    sync_code_signing(type: "appstore", readonly: true)
+
+    build_app(
+      workspace: "ios/App/App.xcworkspace",
+      scheme: "App",
+      export_method: "app-store",
+      output_directory: "build/ipa"
+    )
+  end
+
+  desc "Build and upload to TestFlight"
+  lane :beta do
+    build
+    upload_to_testflight(skip_waiting_for_build_processing: true)
+  end
+end

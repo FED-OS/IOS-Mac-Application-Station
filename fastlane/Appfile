@@ -1,0 +1,4 @@
+app_identifier("com.yourcompany.yourapp") # The bundle identifier of your app
+apple_id("you@example.com")               # Your Apple Developer account email
+itc_team_id("123456789")                  # App Store Connect Team ID (optional)
+team_id("ABCDE12345")                     # Developer Portal Team ID
